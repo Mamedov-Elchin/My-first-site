@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Lexend Zetta';
+    src: local('Lexend Zetta Regular'), local('Lexend-Zetta-Regular'),
+        url('LexendZetta-Regular.woff2') format('woff2'),
+        url('LexendZetta-Regular.woff') format('woff'),
+        url('LexendZetta-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

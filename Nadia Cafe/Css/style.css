@@ -1,0 +1,505 @@
+*,*::before,::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:lexend zetta ;
+    src: url(../Css/fonts/LexendZetta-VariableFont_wght.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: lexend zetta;
+    src: url(//Css/fonts/LexendZetta-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: lexend zetta;
+    src: url(./fonts/LexendZetta-VariableFont_wght.ttf);
+}
+html,body{
+    height: 100%;
+}
+
+.wrapper1{
+    background-color: #dcd4d8;
+}
+
+.wrapper2{
+    background:#455040;
+}
+
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    z-index: 2;
+
+}
+.header-body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.header-logo{
+    color:black;
+   font-family: 'lexend zetta';
+   font-size: 22px;
+   text-decoration: none;
+   max-width: 100%;
+   position: relative;
+   z-index: 3;
+    
+}
+.header-burger{
+    display: none;
+}
+
+.header-list{
+    display: flex;
+    position: relative;
+    z-index: 3;
+}
+.header-list li{
+    list-style: none;
+    margin: 18px 0px 0px 50px;
+}
+.header-link{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+@media (max-width:767px){
+    .header-logo{
+        font-family: lexend zetta;
+        
+    }
+    
+    .header-body{
+        height: 80px;
+    }
+   .header-logo{
+    font-size: 25px;
+   }
+    .header-burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .header-burger span{
+        position: absolute;
+        background-color: black;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header-burger::before{
+        content: '';
+        background-color: black;
+        position: absolute;
+       width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header-burger::after{
+        content: '';
+        background-color: black;
+        position: absolute;
+       width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+        
+
+    }
+ .header-burger::before{
+    top: 0;
+ }
+ .header-burger::after{
+    bottom: 0;
+ }
+ .header-burger.active span{
+    transform: scale(0);
+ }
+
+ .header-burger.active::before{
+ transform: rotate(45deg);
+ top: 9px;
+ }
+ .header-burger.active::after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+ .header-menu{
+    position:fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#f1f1f1;
+    padding: 100px 0px 0px 0px;
+ }
+ .header-menu.active{
+    top: 0;
+ }
+ .header-list{
+    display: block;
+ }
+ .header-list li{
+    margin: 0px 0px 20px;
+ }
+
+
+}
+
+.content{
+    padding: 160px 0px 0px 0px;
+    
+}
+.content-title{
+font-size: 100px;
+text-transform: uppercase;
+text-align: center;
+font-family:  'lexend zetta';
+font-weight: 300;
+
+}
+@media (max-width:500px){
+    .content-title{
+
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'lexend zetta';
+}
+
+}
+@media (max-width:737px){
+    .content-title{
+
+        font-size: 70px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'lexend zetta';
+}
+
+}
+@media (max-width:454px){
+    .content-title{
+
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'lexend zetta';
+}
+
+}
+.content-text{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+}
+
+.image-1{
+    margin-top: 50px;
+}
+.content-button{
+    margin-top: 40px;
+}
+
+.content-text2{
+    text-align: center;
+    font-size: 25px;
+   padding-top: 90px;
+   padding-bottom: 90px;
+   font-family: 'lexend zetta';
+}
+
+.cards-title{
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.cards-text{
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 60px;
+}
+.title-menu{
+    display: block;
+    color: #f8d6b4;
+    text-align: center;
+    font-size: 120px;
+    font-family: 'lexend zetta';
+    font-weight: 300;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    
+}
+@media (max-width:380px){
+    .title-menu{
+        font-size: 60px;
+    }
+}
+@media (max-width:658px){
+    .title-menu{
+        font-size: 80px;
+    }
+}
+.menuwka{
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-top: 100px;
+    font-weight: 400;
+    font-family: 'lexend zetta';
+    color: #f8d6b4;
+}
+
+.content-button2{
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+.image-big{
+    padding-bottom: 70px;
+}
+.about-us{
+   display: block;
+    font-size: 21px;
+    width: 100%;
+    font-family: 'lexend zetta';
+    font-weight: 500;
+    padding-bottom: 20px;
+    justify-items: center;
+}
+.about-block{
+    font-size: 13px;
+    font-family: 'lexend zetta';
+    font-weight: 400;
+}
+.croissant{
+    padding-top: 80px;
+}
+@media(max-width:767px){
+    .image4{
+        padding-top: 30px;
+    }
+}
+.button3{
+    padding-top: 90px;
+    
+}
+.big-title{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'lexend zetta';
+    font-weight: 300;
+    padding-top: 100px;
+    
+}
+
+@media(max-width:959px){
+    .big-title{
+        font-size: 90px;
+    }
+}
+@media(max-width:676px){
+    .big-title{
+        font-size: 60px;
+    }
+}
+.some-text{
+    font-family:'lexend zetta';
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 600px;
+}
+
+ @media (max-width:767px){
+    .form-group {
+        margin-bottom: 10px;
+        width: 400px;
+    }
+ }
+
+ @media (max-width:467px){
+    .form-group {
+        margin-bottom: 10px;
+        width: 250px;
+    }
+ }
+ .cards-title{
+    font-family: 'lexend zetta';
+ }
+
+ .button4{
+    padding: 30px 0px;
+ }
+ .invitation{
+    font-family: 'lexend zetta';
+    font-weight: 500;
+    font-size: 18px;
+    
+ }
+ .site-end{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-family: 'lexend zetta';
+    font-weight: 400;
+    font-size: 14px;
+ }
+
+ .icons{
+    padding-top: 20px;
+ }
+
+.menu-group{
+ 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4em;
+    padding: 1.5em 1em;
+
+}
+.menu-group-heading{
+    font-weight: 400;
+    font-family: 'lexend zetta';
+    color: #f8d6b4;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+@media (min-width:900px) {
+    .menu{
+        font-size: 12px;
+    }
+    .menu-group{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.menu-item{
+    display: flex;
+    max-width: 480px;
+}
+.menu-item-text{
+    flex-grow: 1;
+    color: #f8d6b4;
+}
+.menu-item-name{
+    font-family: 'lexend zetta';
+    font-weight: 300;
+    color: #f8d6b4;
+    font-size: 20px;
+}
+
+.menu-item-price{
+    font-family: 'lexend zetta';
+    font-weight: 300;
+    color: #f8d6b4;
+    font-size: 20px;
+}
+.menu-item-heading{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.long-pic{
+    padding-right: 30px;
+    
+}
+.long-pic2{
+    padding-left: 30px;
+    margin-top: 70px;
+   
+  
+}
+@media (max-width:767px){
+    .long-pic{
+        padding-right: 0px;
+    }
+    .long-pic2{
+        padding-left: 0px;
+    }
+    
+
+}
+.long-pic-text{
+    padding-top: 180px;
+    font-size: 18px;
+}
+@media (max-width:992px){
+    .long-pic-text{
+        padding-top: 80px;
+        font-size: 17px;
+    }
+
+}
+@media (max-width:820px){
+    .long-pic-text{
+        padding-top: 50px;
+        font-size: 16px;
+    }
+
+}
+.content-text{
+    padding-bottom: 60px;
+}
+
+.last-text{
+    font-size: 18px;
+    text-align:center ;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+
+
